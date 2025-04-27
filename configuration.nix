@@ -11,6 +11,9 @@
 
       # gpu stuff
       ./nvidia.nix
+
+      # self-explanatory
+      ./gaming.nix
     ];
 
   # Bootloader.
