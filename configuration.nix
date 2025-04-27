@@ -75,6 +75,7 @@
 
   environment.systemPackages = [
     pkgs.gparted
+    pkgs.pciutils
   ];
 
   # List services that you want to enable:
