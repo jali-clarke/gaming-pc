@@ -17,6 +17,9 @@
 
       # /home/pi
       ./users-pi.nix
+
+      # zfs support and mounts
+      ./zfs.nix
     ];
 
   # Bootloader.
