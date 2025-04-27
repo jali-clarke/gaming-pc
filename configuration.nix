@@ -70,8 +70,9 @@
     isNormalUser = true;
     description = "pi";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    #  thunderbird
+    packages = [
+      pkgs.git
+      pkgs.vscode
     ];
   };
 
