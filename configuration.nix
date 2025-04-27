@@ -9,11 +9,14 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
 
+      # self-explanatory
+      ./gaming.nix
+
       # gpu stuff
       ./nvidia.nix
 
-      # self-explanatory
-      ./gaming.nix
+      # /home/pi
+      ./users-pi.nix
     ];
 
   # Bootloader.
@@ -66,17 +69,6 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.pi = {
-    isNormalUser = true;
-    description = "pi";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = [
-      pkgs.git
-      pkgs.vscode
-    ];
-  };
 
   # Install firefox.
   programs.firefox.enable = true;
