@@ -62,7 +62,16 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix = {
+    registry = {
+      nixpkgs.to = {
+        type = "path";
+        path = pkgs.path;
+      };
+    };
+
+    settings.experimental-features = [ "nix-command" "flakes" ];
+  };
 
   environment.systemPackages = [
     pkgs.gparted
