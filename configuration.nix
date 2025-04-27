@@ -5,23 +5,6 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-
-      # self-explanatory
-      ./gaming.nix
-
-      # gpu stuff
-      ./nvidia.nix
-
-      # /home/pi
-      ./users-pi.nix
-
-      # zfs support and mounts
-      ./zfs.nix
-    ];
-
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
