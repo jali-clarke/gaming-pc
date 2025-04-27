@@ -79,6 +79,10 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  environment.systemPackages = [
+    pkgs.gparted
+  ];
+
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
