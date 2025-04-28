@@ -75,6 +75,7 @@
 
   environment.systemPackages = [
     pkgs.gparted
+    pkgs.nmon
     pkgs.pciutils
     pkgs.pv
     pkgs.smartmontools
