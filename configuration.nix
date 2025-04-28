@@ -76,6 +76,7 @@
   environment.systemPackages = [
     pkgs.gparted
     pkgs.pciutils
+    pkgs.pv
     pkgs.smartmontools
     pkgs.vim
   ];
