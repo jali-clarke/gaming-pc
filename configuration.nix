@@ -76,6 +76,8 @@
   environment.systemPackages = [
     pkgs.gparted
     pkgs.pciutils
+    pkgs.smartmontools
+    pkgs.vim
   ];
 
   # List services that you want to enable:
