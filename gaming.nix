@@ -8,6 +8,11 @@
     enable32Bit = true;
   };
 
+  fileSystems."/home/pi/steam-games" = {
+    device = "/dev/disk/by-id/ata-WDC_WD10EZEX-75M2NA0_WD-WCC3F2ZPFFNL-part1";
+    fsType = "ext4";
+  };
+
   programs.steam.enable = true;
   programs.steam.gamescopeSession.enable = true;
   programs.gamemode.enable = true;
