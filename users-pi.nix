@@ -6,7 +6,6 @@
     description = "pi";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = [
-      pkgs.discord
       pkgs.git
       pkgs.vscode
     ];
