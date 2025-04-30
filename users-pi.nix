@@ -8,6 +8,7 @@
     packages = [
       pkgs.git
       pkgs.qbittorrent
+      pkgs.vlc
       pkgs.vscode
     ];
   };
