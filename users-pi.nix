@@ -7,6 +7,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = [
       pkgs.git
+      pkgs.qbittorrent
       pkgs.vscode
     ];
   };
