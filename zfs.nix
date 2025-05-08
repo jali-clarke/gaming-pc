@@ -8,6 +8,9 @@
 
   services.zfs.autoScrub.enable = true;
 
+  # limit arc size, in bytes
+  boot.kernelParams = [ "zfs.zfs_arc_max=${toString (2 * 1024 * 1024 * 1024)}" ];
+
   services.sanoid = {
     enable = true;
     datasets."zfs-fast" = {
