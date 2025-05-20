@@ -9,7 +9,7 @@
   };
 
   fileSystems."/home/pi/steam-games" = {
-    device = "/dev/disk/by-id/ata-WDC_WD10EZEX-75M2NA0_WD-WCC3F2ZPFFNL-part1";
+    device = "/dev/disk/by-id/nvme-KINGSTON_SNV3S1000G_50026B76871D698E-part1";
     fsType = "ext4";
   };
 
