@@ -14,5 +14,6 @@
     pkgs.gnome-text-editor
     pkgs.gnome-maps
     pkgs.gnome-music
+    pkgs.decibels
   ];
 }
