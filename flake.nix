@@ -9,6 +9,7 @@
       modules = [
         ./configuration.nix
         ./gaming.nix
+        ./gnome.nix
         ./hardware-configuration.nix
         ./nvidia.nix
         ./users-pi.nix
