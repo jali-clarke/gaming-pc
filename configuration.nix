@@ -54,6 +54,9 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  # enable direnv + nix-direnv integration
+  programs.direnv.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
