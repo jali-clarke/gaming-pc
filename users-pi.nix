@@ -12,4 +12,16 @@
       pkgs.vscode
     ];
   };
+
+  security.sudo.extraRules = [
+    {
+      users = [ "pi" ];
+      commands = [
+        {
+          command = "ALL";
+          options = [ "NOPASSWD" ];
+        }
+      ];
+    }
+  ];
 }
