@@ -72,6 +72,7 @@
   };
 
   environment.systemPackages = [
+    pkgs.dnsutils
     pkgs.gparted
     pkgs.nmon
     pkgs.pciutils
