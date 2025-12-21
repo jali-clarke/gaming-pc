@@ -17,6 +17,10 @@
   programs.steam.gamescopeSession.enable = true;
   programs.gamemode.enable = true;
 
+  # some steam games are distributed as appimages
+  programs.appimage.enable = true;
+  programs.appimage.binfmt = true;
+
   environment.systemPackages = [
     pkgs.bottles
     pkgs.heroic
